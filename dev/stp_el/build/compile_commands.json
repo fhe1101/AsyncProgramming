@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/stp_el.dir/stp.c.o   -c /home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/stp.c",
+  "file": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/stp.c"
+},
+{
+  "directory": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/stp_el.dir/stp_el.c.o   -c /home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/stp_el.c",
+  "file": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/stp_el.c"
+},
+{
+  "directory": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/stp_el.dir/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/event_loop.c.o   -c /home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/event_loop.c",
+  "file": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/event_loop.c"
+},
+{
+  "directory": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/stp_el.dir/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/timerlib.c.o   -c /home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/timerlib.c",
+  "file": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/timerlib.c"
+},
+{
+  "directory": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/stp_el.dir/network_utils.c.o   -c /home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/network_utils.c",
+  "file": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/network_utils.c"
+},
+{
+  "directory": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/stp_el.dir/rt.c.o   -c /home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/rt.c",
+  "file": "/home/dev/dev/Udemy/udemy-design-patterns/asynchronous-programming/AsyncProgramming/dev/stp_el/rt.c"
+}
+]
