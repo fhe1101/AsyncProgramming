@@ -6,8 +6,7 @@
 event_loop_t el;
 int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-int
-sum(int arr[], int n) {
+int sum(int arr[], int n) {
 
     int i, sum = 0;
     for (i = 0; i < n; i++) {
@@ -16,8 +15,7 @@ sum(int arr[], int n) {
     return sum;
 }
 
-int
-mul(int arr[], int n) {
+int mul(int arr[], int n) {
 
     int i, mul = 1;
     for (i = 0; i < n; i++) {
@@ -26,6 +24,7 @@ mul(int arr[], int n) {
     return mul;
 }
 
+// Task function requires prototype: void fn(void *)
 typedef struct arg_obj_ {
 
     int *arr;
@@ -33,23 +32,20 @@ typedef struct arg_obj_ {
 } arg_obj_t;
 
 
-void
-sum_wrapper(void *arg) {
+void sum_wrapper(void *arg) {
 
     arg_obj_t *arg_obj = (arg_obj_t *)arg;
     printf ("sum = %d\n", sum(arg_obj->arr, arg_obj->n));
 }
 
-void
-mul_wrapper(void *arg) {
+void mul_wrapper(void *arg) {
 
     arg_obj_t *arg_obj = (arg_obj_t *)arg;
     printf ("mul = %d\n", mul(arg_obj->arr, arg_obj->n));
 }
 
 
-int
-main(int argc, char **argv) {
+int main(int argc, char **argv) {
 
     event_loop_init(&el);
     event_loop_run(&el);
@@ -58,15 +54,17 @@ main(int argc, char **argv) {
     arg_obj_t *arg_obj1 = (arg_obj_t *)calloc(1, sizeof(arg_obj_t));
     arg_obj1->arr = arr;
     arg_obj1->n = sizeof(arr)/sizeof(arr[0]);
-    task_t *task_sum = task_create_new_job(&el, sum_wrapper, (void *)arg_obj1);
+    task_create_new_job(&el, sum_wrapper, (void *)arg_obj1);
 
 
     arg_obj_t *arg_obj2 = (arg_obj_t *)calloc(1, sizeof(arg_obj_t));
     arg_obj2->arr = arr;
     arg_obj2->n = sizeof(arr)/sizeof(arr[0]);
-    task_t *task_mul = task_create_new_job(&el, mul_wrapper, (void *)arg_obj2);
+    task_create_new_job(&el, mul_wrapper, (void *)arg_obj2);
 
 
     printf ("End of main\n");
-    scanf("\n");
+    getchar();
+
+    return 0;
 }
